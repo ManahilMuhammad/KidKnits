@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Advent Pro", sans-serif;
+    padding: 3em 4em;
+    background: url("../Media/main-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100rem;
+    overflow-y: hidden;
+}
+
+.main-content {
+    margin: auto 0;
+    border: 0.05em solid #000000;
+    background: url("../Media/background.png");
+    height: 41.125em;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    /* adding the background image */
+    align-self: center;
+    background-repeat: no-repeat;
+    /* avoid duplicates of the same image */
+    background-size: cover;
+    padding: 1% 5% 0 5%;
+    /* adding padding to main so that the sections within it are spread apart */
+    background-attachment: fixed;
+    /* the background stays in place as the page is scrolled */
+    overflow-y: hidden;
+}
+
+main {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 31.5rem;
+    /* this keeps the top navigation menu from aligning towards the right */
+    max-height: 3rem;
+    /* adds padding to the navigation menu */
+    border: #000000;
+    border-width: 0.005em;
+    border-style: solid;
+    box-shadow: rgb(0, 0, 0) -0.2em 0.2em 0;
+}
+
+#logo {
+    width: 12em;
+    position: relative;
+    top: 0;
+    align-self: center;
+    transition: 0.25s ease-in-out;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    z-index: 5;
+    padding-bottom: 5em;
+    margin-top: -0.55em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    margin: 8.5em auto;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+.menu.is-active {
+    top: 0;
+    left: 0;
+}
+
+.menu-inner {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.75rem;
+    margin: 0 auto;
+    margin-right: 5rem;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-link {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    display: flex;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.cover-photo {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Media/main-background.png");
+    height: 23em;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 0.05em;
+    margin-top: 5em;
+}
+
+.cover-text {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+
+.cover-text h1 {
+    font-size: 1.85em;
+    font-weight: 700;
+    color: white;
+    text-shadow: -0.035em 0.035em 0 black;
+    margin-bottom: -0.25em;
+}
+
+.cover-text button {
+    font-size: 0.9em;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 500;
+    margin-top: -0.5em;
+    background-color: white;
+    border-color: black;
+    border-width: 0.005em;
+    padding: 0.5em 1em;
+    box-shadow: -0.15em 0.15em 0 black;
+}
+
+.cover-text button:hover {
+    box-shadow: -0.1em 0.1em 0 black;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.cover-text button:active {
+    box-shadow: none;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+    gap: 1em;
+    margin-top: 5em;
+    margin-left: 0.9em;
+    justify-items: center;
+}
+
+.grid-item {
+    background: url("../Media/main-background.png");
+    border: 0.05em solid black;
+    box-shadow: -0.1em 0.1em 0 black;
+    text-align: center;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 1em;
+    width: 15em;
+}
+
+.grid-item img {
+    width: 13em;
+}
+
+.grid-item .img {
+    width: 13.25em;
+    border-style: solid;
+    border-width: 0.05em;
+    margin-left: 0.8em;
+}
+
+.grid-item img:hover {
+    width: 13.25em;
+    margin-bottom: -0.25em;
+    transition: 0.25s ease-in-out;
+}
+
+.grid-item h3,
+.grid-item h4,
+.grid-item h5 {
+    font-weight: 500;
+    text-align: left;
+}
+
+.grid-item h4 {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.grid-item h3,
+.grid-item h4 {
+    margin-bottom: -1em;
+}
+
+.grid-item h5 {
+    font-size: 0.95em;
+    margin-bottom: 1em;
+}
+
+.about-popup {
+    z-index: 10;
+    position: fixed;
+    margin-left: 55%;
+    margin-top: 0.5em;
+    background-color: white;
+    padding: 0.25em 1em;
+    display: none;
+}
+
+.about-popup img {
+    margin-left: -10em;
+    width: 3em;
+    margin-bottom: -4em;
+}
+
+.about-popup h3 {
+    font-weight: 400;
+    margin-left: -5em;
+}
+
+.about-intro {
+    text-align: center;
+    font-size: 0.75em;
+    display: flex;
+    margin: 5em auto auto auto;
+    max-width: 100%;
+    width: 30em;
+}
+
+.about-intro h1 {
+    font-weight: 300;
+    margin-top: 3em;
+}
+
+.about-intro h1 span {
+    font-weight: 400;
+    font-size: 1.75em;
+}
+
+.about-intro .hinna {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-intro .hinna #hinna {
+    width: 23em;
+    z-index: 0;
+}
+
+.about-info {
+    padding: 0 5em;
+    text-align: justify;
+}
+
+.about-info p span {
+    font-weight: 500;
+}
+
+.about-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-info a:hover {
+    color: rgb(0, 0, 0, 0.75);
+    transition: 0.25s;
+}
+
+.about-info p {
+    font-size: 1.25em;
+}
+
+.contact {
+    margin-top: 5em;
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+.contact h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.contact-info {
+    margin-top: -2em;
+}
+
+.contact-info h3 {
+    font-weight: 400;
+    margin-top: 2em;
+    font-size: 1.25em;
+}
+
+.contact-info img {
+    width: 2.5em;
+    margin-top: -0.75em;
+}
+
+.contact-info img:hover {
+    width: 2.6em;
+    margin-top: -0.85em;
+    transition: 0.25s;
+}
+
+.contact-info h3 span {
+    font-size: 0.75em;
+    margin-top: -1em;
+}
+
+.footer {
+    margin: 2.5em 0 2.5em 0.2em;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.005em;
+    box-shadow: -0.2em 0.2em 0 black;
+    padding-top: 1em;
+}
+
+.footer h3 {
+    font-weight: 500;
+    margin-bottom: 0.25em;
+    text-decoration: underline;
+}
+
+.socials img {
+    width: 1.5em;
+    padding: 0 0.5em;
+}
+
+.navigation {
+    margin-bottom: 1em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 0 0.5em;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.navigation a:hover,
+.menu-link:hover {
+    color: rgb(50, 50, 50);
+    transition: 0.25s;
+}
+
+.copyright {
+    position: relative;
+    background-image: url("../Media/main-background.png");
+    height: 2em;
+    text-align: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 0.05em;
+}
+
+.copyright p {
+    text-align: center;
+    align-self: center;
+    position: absolute;
+    top: -0.55em;
+    font-weight: 500;
+    width: 100%;
+}
+
+@media only screen and (min-width: 48rem) {
+    .menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .menu-inner {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.75rem;
+        margin: 0 auto;
+        margin-right: 5rem;
+    }
+}
+
+@media (min-width: 0) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 850px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1500px) {
+    .main-content {
+        height: 46em;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .cover-text {
+        font-size: 1.5em;
+    }
+
+    .cover-text button {
+        font-size: 0.75em;
+    }
+
+    .cover-photo {
+        height: 23em;
+    }
+
+    .main-content {
+        height: 46em;
+    }
+}
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 1em 1em;
+    }
+
+    .container {
+        max-width: 25em;
+    }
+
+    .menu-link {
+        font-size: 1em;
+    }
+
+    .menu-inner {
+        margin-right: 4em;
+        column-gap: 1em;
+    }
+
+    .cover-photo {
+        height: 23em;
+    }
+
+    .main-content {
+        height: 49.5em;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-intro {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .hinna #hinna {
+        max-width: 100%;
+        margin-left: 4em;
+        margin-top: -2em;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        max-width: 19em;
+    }
+
+
+    .menu-link,
+    .navigation {
+        font-size: 0.748em;
+        text-align: center;
+    }
+
+    .menu-inner {
+        margin-right: 3em;
+        column-gap: 1em;
+    }
+
+    .cover-photo {
+        height: 22em;
+    }
+
+    .contact,
+    .about {
+        font-size: 0.75em;
+    }
+
+    .about {
+        margin-top: 1em;
+    }
+
+    .main-content {
+        height: 50em;
+    }
+
+}
+
+@media (max-width: 360px) {
+    body {
+        padding: 0;
+    }
+}
