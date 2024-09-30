@@ -422,12 +422,6 @@ main {
     }
 }
 
-@media (max-width: 1500px) {
-    .main-content {
-        height: 46em;
-    }
-}
-
 @media (max-width: 900px) {
 
     .cover-text {
@@ -440,10 +434,6 @@ main {
 
     .cover-photo {
         height: 23em;
-    }
-
-    .main-content {
-        height: 46em;
     }
 }
 
@@ -468,10 +458,6 @@ main {
 
     .cover-photo {
         height: 23em;
-    }
-
-    .main-content {
-        height: 49.5em;
     }
 }
 
@@ -516,10 +502,6 @@ main {
 
     .about {
         margin-top: 1em;
-    }
-
-    .main-content {
-        height: 50em;
     }
 
 }
