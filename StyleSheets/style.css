@@ -484,8 +484,7 @@ main {
         max-width: 19em;
     }
 
-    .menu-link,
-    .navigation {
+    .menu-link {
         font-size: 1em;
         text-align: center;
     }
@@ -514,14 +513,19 @@ main {
 
     .navigation a {
         font-size: 1em;
+        padding: 0.25em;
     }
+
+    .copyright {
+        font-size: 0.9em;
+    }
+
 }
 
 @media (max-width: 360px) {
     body {
         padding: 0;
     }
-
     .navigation a {
         font-size: 0.9em;
     }
