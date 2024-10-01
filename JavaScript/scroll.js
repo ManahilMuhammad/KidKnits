@@ -13,8 +13,4 @@ element.onscroll = (e) => {
     logo.style.width = 0;
     nav.style.marginTop = 0;
     lastScrollTop = element.scrollTop <= 0 ? 0 : element.scrollTop;
-
-    if (element.scrollTop + element.offsetHeight >= element.scrollHeight) {
-        console.log("End");
-    }
 }
