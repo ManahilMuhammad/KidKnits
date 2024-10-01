@@ -127,7 +127,7 @@ main {
     font-size: 1.85em;
     font-weight: 700;
     color: white;
-    text-shadow: -0.035em 0.035em 0 black;
+    text-shadow: 0 0 0.125em black;
     margin-bottom: -0.25em;
 }
 
@@ -424,7 +424,7 @@ main {
 @media (max-width: 900px) {
 
     .cover-text {
-        font-size: 1.5em;
+        font-size: 1.35em;
     }
 
     .cover-text button {
@@ -451,8 +451,10 @@ main {
     }
 
     .menu-inner {
-        margin-right: 4em;
+        width: 25em;
+        padding-left: 4em;
         column-gap: 1em;
+        text-align: center;
     }
 
     .cover-photo {
@@ -471,6 +473,10 @@ main {
         margin-left: 4em;
         margin-top: -2em;
     }
+
+    .cover-text {
+        font-size: 1.125em;
+    }
 }
 
 @media (max-width: 560px) {
@@ -478,15 +484,14 @@ main {
         max-width: 19em;
     }
 
-
     .menu-link,
     .navigation {
-        font-size: 0.748em;
+        font-size: 1em;
         text-align: center;
     }
 
     .menu-inner {
-        margin-right: 3em;
+        padding-left: 1.1em;
         column-gap: 1em;
     }
 
@@ -501,6 +506,10 @@ main {
 
     .about {
         margin-top: 1em;
+    }
+
+    .cover-text {
+        font-size: 1em;
     }
 
 }
