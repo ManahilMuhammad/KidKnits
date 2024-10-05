@@ -126,8 +126,8 @@ main {
 .cover-text h1 {
     font-size: 1.85em;
     font-weight: 700;
-    color: white;
-    text-shadow: 0 0 0.125em black;
+    color: rgb(210, 83, 140);
+    text-shadow: 0 0 0.125em white;
     margin-bottom: -0.25em;
 }
 
