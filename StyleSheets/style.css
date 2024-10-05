@@ -689,7 +689,7 @@ main {
 
 @media (max-height: 900px) {
     .main-content {
-        height: 53em;
+        height: 48em;
     }
 }
 
@@ -713,7 +713,7 @@ main {
 
 @media (max-height: 800px) {
     .main-content {
-        height: 46em;
+        height: 41.125em;
     }
 }
 
