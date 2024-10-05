@@ -530,3 +530,195 @@ main {
         font-size: 0.9em;
     }
 }
+
+@media (max-width: 1450px) and (orientation: landscape) {
+    .main-content {
+        height: 82em;
+    }
+}
+
+@media (max-width: 1400px) and (orientation: landscape) {
+    .main-content {
+        height: 77em;
+    }
+}
+
+@media (max-width: 1350px) and (orientation: landscape) {
+    .main-content {
+        height: 77em;
+    }
+}
+
+@media (max-width: 1300px) and (orientation: landscape) {
+    .main-content {
+        height: 72em;
+    }
+}
+
+@media (max-width: 1250px) and (orientation: landscape) {
+    .main-content {
+        height: 70em;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    .main-content {
+        height: 66em;
+    }
+}
+
+@media (max-width: 1150px) and (orientation: landscape) {
+    .main-content {
+        height: 64em;
+    }
+}
+
+@media (max-width: 1050px) and (orientation: landscape) {
+    .main-content {
+        height: 58em;
+    }
+}
+
+@media (max-width: 950px) and (orientation: landscape) {
+    .main-content {
+        height: 51em;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .main-content {
+        height: 48em;
+    }
+}
+
+@media (max-width: 850px) and (orientation: landscape) {
+    .main-content {
+        height: 45em;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+    .main-content {
+        height: 42em;
+    }
+}
+
+@media (max-width: 750px) and (orientation: landscape) {
+    .main-content {
+        height: 39em;
+    }
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+    .main-content {
+        height: 36em;
+    }
+}
+
+@media (max-width: 650px) and (orientation: landscape) {
+    .main-content {
+        height: 33em;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .main-content {
+        height:30em;
+    }
+}
+
+@media (max-height: 1450px) {
+    .main-content {
+        height: 82em;
+    }
+}
+
+@media (max-height: 1400px) {
+    .main-content {
+        height: 77em;
+    }
+}
+
+@media (max-height: 1350px) {
+    .main-content {
+        height: 77em;
+    }
+}
+
+@media (max-height: 1300px) {
+    .main-content {
+        height: 72em;
+    }
+}
+
+@media (max-height: 1250px) {
+    .main-content {
+        height: 70em;
+    }
+}
+
+@media (max-height: 1200px) {
+    .main-content {
+        height: 66em;
+    }
+}
+
+@media (max-height: 1150px) {
+    .main-content {
+        height: 64em;
+    }
+}
+
+@media (max-height: 1050px) {
+    .main-content {
+        height: 58em;
+    }
+}
+
+@media (max-height: 950px) {
+    .main-content {
+        height: 51em;
+    }
+}
+
+@media (max-height: 900px) {
+    .main-content {
+        height: 48em;
+    }
+}
+
+@media (max-height: 850px) {
+    .main-content {
+        height: 45em;
+    }
+}
+
+@media (max-height: 800px) {
+    .main-content {
+        height: 42em;
+    }
+}
+
+@media (max-height: 750px) {
+    .main-content {
+        height: 39em;
+    }
+}
+
+@media (max-height: 700px) {
+    .main-content {
+        height: 36em;
+    }
+}
+
+@media (max-height: 650px) {
+    .main-content {
+        height: 33em;
+    }
+}
+
+@media (max-height: 600px) {
+    .main-content {
+        height:30em;
+    }
+}
